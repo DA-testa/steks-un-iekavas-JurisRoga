@@ -13,19 +13,37 @@ def find_mismatch(text):
     opening_brackets_stack = []
     for i, next in enumerate(text):
         if next in "([{":
+            opening_brackets_stack.append(Bracket(next, i+1))
+            #print("burkans")
             # Process opening bracket, write your code here
-            pass
-
+            
         if next in ")]}":
+            if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
+                print(i+1)
+                #print("abols")
+                return 0
+            opening_brackets_stack.pop()
             # Process closing bracket, write your code here
-            pass
-
-
+    if not len(opening_brackets_stack) == 0:
+        print(opening_brackets_stack[-1].position)
+        return 0
+            
 def main():
-    text = input()
-    mismatch = find_mismatch(text)
+    mismatch = 1
+    parbaude = input()
+    if parbaude == "I":
+        text = input()
+        mismatch = find_mismatch(text)
+    else:
+        vieta = input()
+        #info = open(vieta, 'r')
+        #text = (info.read())
+        mismatch = find_mismatch(vieta)
+    #ievada test/0 vai citu, tad strada, 
+    #mismatch = find_mismatch(text)
+    if not mismatch == 0:
+        print("Success")
     # Printing answer, write your code here
-
 
 if __name__ == "__main__":
     main()
