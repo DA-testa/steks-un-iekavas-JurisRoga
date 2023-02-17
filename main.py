@@ -36,13 +36,13 @@ def main():
         mismatch = find_mismatch(text)
     elif parbaude == "F":
         vieta = input()
-        text = open(vieta)
+        info = open(vieta, 'r')
+        text = (info.read())
         mismatch = find_mismatch(text)
 
     if not mismatch == 0:
         print("Success")
     # Printing answer, write your code here
-    #print("Success")
 
 if __name__ == "__main__":
     main()
