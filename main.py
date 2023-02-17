@@ -36,7 +36,7 @@ def main():
         mismatch = find_mismatch(text)
     elif parbaude == "F":
         #text = open("test.txt", "r")
-        mismatch = find_mismatch(parbaude)
+        #mismatch = find_mismatch(parbaude)
         print(972)
 
     if not mismatch == 0:
