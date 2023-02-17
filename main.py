@@ -29,6 +29,7 @@ def find_mismatch(text):
         return 0
             
 def main():
+    mismatch = 1
     parbaude = input()
     if parbaude == "I":
         text = input()
