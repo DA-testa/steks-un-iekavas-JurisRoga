@@ -20,7 +20,7 @@ def find_mismatch(text):
         if next in ")]}":
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
                 print(i+1)
-                #print("abols")
+                print("abols")
                 return 0
             opening_brackets_stack.pop()
             # Process closing bracket, write your code here
@@ -35,14 +35,13 @@ def main():
         text = input()
         mismatch = find_mismatch(text)
     elif parbaude == "F":
-        text = open(test)
-        mismatch = find_mismatch(text)
+        #text = open()
+        mismatch = find_mismatch(parbaude)
 
     if not mismatch == 0:
         print("Success")
-
     # Printing answer, write your code here
-
+    print("Success")
 
 if __name__ == "__main__":
     main()
