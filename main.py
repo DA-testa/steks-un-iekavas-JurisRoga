@@ -35,10 +35,9 @@ def main():
         text = input()
         mismatch = find_mismatch(text)
     elif parbaude == "F":
-        #text = open("test.txt", "r")
-        #mismatch = find_mismatch(parbaude)
-        print(972)
-        return
+        vieta = input()
+        text = open(vieta)
+        mismatch = find_mismatch(text)
 
     if not mismatch == 0:
         print("Success")
