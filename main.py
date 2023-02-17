@@ -35,8 +35,8 @@ def main():
         text = input()
         mismatch = find_mismatch(text)
     elif parbaude == "F":
-        #text = open()
-        mismatch = find_mismatch(parbaude)
+        text = input()
+        mismatch = find_mismatch(text)
 
     if not mismatch == 0:
         print("Success")
