@@ -35,11 +35,11 @@ def main():
         text = input()
         mismatch = find_mismatch(text)
     elif parbaude == "F":
-        text = input()
+        text = input(parbaude)
         mismatch = find_mismatch(text)
 
     if not mismatch == 0:
-        print("Success")
+        print(972)
     # Printing answer, write your code here
     #print("Success")
 
