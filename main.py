@@ -30,6 +30,7 @@ def find_mismatch(text):
         return opening_brackets_stack[-1].position
             
 def main():
+    mismatch = 0
     parbaude = input()
     if parbaude == "I":
         text = input()
