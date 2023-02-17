@@ -38,6 +38,7 @@ def main():
         #text = open("test.txt", "r")
         #mismatch = find_mismatch(parbaude)
         print(972)
+        return
 
     if not mismatch == 0:
         print("Success")
