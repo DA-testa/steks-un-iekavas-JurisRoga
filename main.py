@@ -21,7 +21,7 @@ def find_mismatch(text):
             if not opening_brackets_stack:
                 print(i+1)
                 return
-            elif not are_matching(next, next):
+            elif not are_matching(opening_brackets_stack[-1], next):
                 print(i+1)
             opening_brackets_stack.pop()
             # Process closing bracket, write your code here
