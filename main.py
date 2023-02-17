@@ -24,19 +24,17 @@ def find_mismatch(text):
                 return 0
             opening_brackets_stack.pop()
             # Process closing bracket, write your code here
-
     if not len(opening_brackets_stack) == 0:
         print(opening_brackets_stack[-1].position)
         return 0
             
 def main():
-    mismatch = 0
     parbaude = input()
     if parbaude == "I":
         text = input()
         mismatch = find_mismatch(text)
     elif parbaude == "F":
-        text = open(test, "r")
+        text = open(test)
         mismatch = find_mismatch(text)
 
     if not mismatch == 0:
