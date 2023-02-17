@@ -24,10 +24,10 @@ def find_mismatch(text):
                 return 0
             opening_brackets_stack.pop()
             # Process closing bracket, write your code here
-    if len(opening_brackets_stack) == 0:
-        return "Success"
-    elif not len(opening_brackets_stack) == 0:
-        return opening_brackets_stack[-1].position
+
+    if not len(opening_brackets_stack) == 0:
+        print(opening_brackets_stack[-1].position)
+        return 0
             
 def main():
     mismatch = 0
@@ -40,7 +40,8 @@ def main():
         mismatch = find_mismatch(text)
 
     if not mismatch == 0:
-        print(mismatch)
+        print("Success")
+
     # Printing answer, write your code here
 
 
