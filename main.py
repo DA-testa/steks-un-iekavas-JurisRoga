@@ -33,13 +33,12 @@ def main():
     parbaude = input()
     if parbaude == "I":
         text = input()
-        mismatch = find_mismatch(text)
-    elif parbaude == "F":
+    else:
         vieta = input()
         info = open(vieta, 'r')
         text = (info.read())
-        mismatch = find_mismatch(text)
-
+    #ievada test/0 vai citu, tad strada, 
+    mismatch = find_mismatch(text)
     if not mismatch == 0:
         print("Success")
     # Printing answer, write your code here
